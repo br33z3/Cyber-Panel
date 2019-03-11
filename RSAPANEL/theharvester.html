@@ -1,0 +1,56 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <title>RSA Bilişim - theHarvester</title>
+</head>
+
+<body>
+  <br><br>
+
+  <h2>TheHarvester aracı, hedef sistem/etki alanı üzerinden aktif ve pasif olarak bilgi toplamaya yarayan ve sızma testlerinde de kullanılan bir araçtır.</h2>
+  <h2>TheHarvester aracı ile pasif olarak Google, Bing,… gibi arama motorlarından, Linkedin, Shodan gibi platformlardan kullanıcı profilleri, mail adresleri, sanal hostlar,… tespit edilebilir.</h2>
+  <h2>Aktif olarak da DNS adlarını ve alt etki alanlarını bulmaya yönelik kaba kuvvet saldırıları gerçekleştirilebilir.</h2>
+
+
+  <br><br><br><br><br><br><br><br>
+
+
+  <form name="form" action="theharvester.php" method="post">
+  Domain Giriniz :   <input type="text" name="domain" ><br><br><br>
+  <input type="submit" value="İSTİHBARAT TOPLA"  onclick="move()">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="checkbox" name="cikti" > Çıktı Kaydet
+  </form>
+
+  <br><br><br><br><br>
+    <div id="myProgress">
+      <div id="myBar"></div>
+    </div>
+
+  <script>
+  function move() {
+    var elem = document.getElementById("myBar");
+    var width = 1;
+    var id = setInterval(frame, 90);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+      } else {
+        width++;
+        elem.style.width = width + '%';
+      }
+    }
+  }
+  </script>
+
+
+
+
+
+</body>
+
+
+
+</html>
