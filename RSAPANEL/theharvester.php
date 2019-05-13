@@ -2,7 +2,7 @@
 
 $domain=$_POST['domain'];
 $python = 'python';
-$pyscript = 'C:\Users\asus.LAPTOP-SMDU8F43\Desktop\RSAPANEL\theHarvester\theHarvester.py -l 10 -b all -d ';
+$pyscript = 'YOUR EXACT LOCATION WHERE HARVESTER PY EXAMPLE IN YOUR COMPUTER -l 10 -b all -d ';
 
 
 if(isset($_POST['cikti'])) {
