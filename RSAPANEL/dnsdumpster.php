@@ -2,7 +2,7 @@
 
 $domain=$_POST['domain'];
 $python = 'python';
-$pyscript = 'C:\Users\asus.LAPTOP-SMDU8F43\Desktop\RSAPANEL\Dnsdumpster\dnsdumpster\dnsdumpster\API_example.py ';
+$pyscript = ' YOUR EXACT LOCATION WHERE DNSDUMPSTER API EXAMPLE IN YOUR COMPUTER ';
 
 
 if(isset($_POST['cikti'])) {
